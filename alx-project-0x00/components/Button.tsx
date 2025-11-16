@@ -2,11 +2,12 @@ import { ButtonProps } from "@/interfaces";
 
 const Button: React.FC<ButtonProps> = ({ 
   title, 
-  size = 'medium', 
-  shape = 'rounded-md', 
+  size,
+  shape,
   styles = '',
   className = '' 
 }) => {
+
   const sizeClasses = {
     small: 'px-3 py-1 text-sm',
     medium: 'px-4 py-2 text-base',
